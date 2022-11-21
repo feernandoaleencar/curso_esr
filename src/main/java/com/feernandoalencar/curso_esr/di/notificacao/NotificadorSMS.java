@@ -1,11 +1,9 @@
 package com.feernandoalencar.curso_esr.di.notificacao;
 
 import com.feernandoalencar.curso_esr.di.modelo.Cliente;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Qualifier("urgente")
+@TipoDoNotificador(NivelUrgencia.URGENTE)
 @Component
 public class NotificadorSMS implements Notificador {
 

@@ -3,11 +3,13 @@ package com.feernandoalencar.curso_esr.di.service;
 import com.feernandoalencar.curso_esr.di.modelo.Cliente;
 import com.feernandoalencar.curso_esr.di.notificacao.Notificador;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AtivacaoClienteService {
 
+    @Qualifier("urgente")
     @Autowired
     private Notificador notificador;
 

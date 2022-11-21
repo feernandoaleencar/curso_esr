@@ -1,10 +1,11 @@
 package com.feernandoalencar.curso_esr.di.notificacao;
 
 import com.feernandoalencar.curso_esr.di.modelo.Cliente;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-//@Primary
+@Qualifier("normal")
 @Component
 public class NotificadorEmail implements Notificador {
 
